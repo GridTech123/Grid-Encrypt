@@ -1,8 +1,6 @@
 # Grid-Encrypt
 A simple encryption and decryption engine
 
-A simple encryption and decryption engine I made
-
 Just type in what you want to encrypt or decrypt then choose if you want to encrypt it or decrypt it.
 
 If you encrypted it the code will be put in the console, it looks like this
