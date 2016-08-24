@@ -151,9 +151,30 @@ def encrypt():
             output = output + '`{'
         if letter == 'M':
             output = output + '`}'
+#*
+        if letter == '1':
+            output = output + '*@'
+        if letter == '2':
+            output = output + '*#'
+        if letter == '3':
+            output = output + '*$'
+        if letter == '4':
+            output = output + '*%'
+        if letter == '5':
+            output = output + '*^'
+        if letter == '6':
+            output = output + '*&'
+        if letter == '7':
+            output = output + '*('
+        if letter == '8':
+            output = output + '*)'
+        if letter == '9':
+            output = output + '*_'
+        if letter == '0':
+            output = output + '*+'
         clock = clock + 1
     else:
-        print 'the encrypted code is: ',output
+        print 'The encrypted code is: ',output
 
 def decrypt():
     print '----------------------------------------------------------------------------'
@@ -184,7 +205,7 @@ def decrypt():
                 output = output + 'i'
             if labelText_str[clock:clock + 1] == '9':
                 output = output + 'o'
-            if labelText_str[clock:clock + 1] == '!':
+            if labelText_str[clock:clock + 1] == '~':
                 output = output + 'p'
             if labelText_str[clock:clock + 1] == '@':
                 output = output + 'a'
@@ -306,9 +327,30 @@ def decrypt():
                 output = output + 'N'
             if labelText_str[clock:clock + 1] == '}':
                 output = output + 'M'
+        if letter == '*':
+            if labelText_str[clock:clock + 1] == '@':
+                output = output + '1'
+            if labelText_str[clock:clock + 1] == '#':
+                output = output + '2'
+            if labelText_str[clock:clock + 1] == '$':
+                output = output + '3'
+            if labelText_str[clock:clock + 1] == '%':
+                output = output + '4'
+            if labelText_str[clock:clock + 1] == '^':
+                output = output + '5'
+            if labelText_str[clock:clock + 1] == '&':
+                output = output + '6'
+            if labelText_str[clock:clock + 1] == '(':
+                output = output + '7'
+            if labelText_str[clock:clock + 1] == ')':
+                output = output + '8'
+            if labelText_str[clock:clock + 1] == '_':
+                output = output + '9'
+            if labelText_str[clock:clock + 1] == '+':
+                output = output + '0'
         clock = clock + 1
     else:
-        print 'The decrypted text it: ',output
+        print 'The decrypted text is: ',output
     
 
 def generate():
